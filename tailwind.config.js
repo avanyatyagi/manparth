@@ -29,7 +29,8 @@ export default {
         'custom-bg': '#F2F2F2',
       },
       fontFamily: {
-        'custom': ['Silver Queen', 'sans-serif'],
+        'custom-font': ['Prata', 'serif'],
+        'hindi-font': ['Noto Sans Devanagari', 'sans-serif'],
       },
     },
   },
