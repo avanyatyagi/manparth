@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/custom/Footer";
+// import Footer from "./components/custom/Footer";
 import Header from "./components/custom/Navbar";
 
 function App() {
