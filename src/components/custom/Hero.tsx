@@ -6,13 +6,13 @@ function Hero() {
     
       <div
         id="hero"
-        className="xl:pt-16 pt-32 mx-auto flex xl:flex-row flex-col text-center xl:text-left items-center h-screen gap-20"
+        className="xl:pt-16 pt-32 mx-auto flex xl:flex-row flex-col text-center xl:text-left items-center h-screen gap-10"
       >
         <div className="flex flex-col items-left xl:w-[60%] w-full gap-5">
-          <div className="xl:text-[5rem] text-[2.5rem] font-semibold text-custom-dark leading-none">
+          <div className="xl:text-[5.5rem] lg:text-[4.5rem] md:text-[3.5rem] text-[2.5rem] font-semibold text-custom-dark leading-none">
             Bridging Tradition and Innovation in Education <br />
             with{" "}
-            <span className="text-custom-light xl:text-[4.5rem] text-[2rem]">
+            <span className="text-custom-light xl:text-[5.5rem] lg:text-[4.5rem] md:text-[3.5rem] text-[2.5rem]">
               <Typewriter
                 words={["Manparth"]}
                 loop={0}
@@ -29,7 +29,7 @@ function Hero() {
             industry. Lorem Ipsum has been the industry's
           </div>
         </div>
-        <div className=" items-center justify-between xl:ml-auto text-center">
+        <div className=" items-center justify-between xl:ml-auto text-center w-[40%]">
           <div className="flex items-center justify-center">
             <img
               src={hero}
@@ -37,7 +37,7 @@ function Hero() {
               width={500}
               height={500}
             
-              className="xl:min-w-[30rem] max-w-[50rem] w-full"
+              className="xl:min-w-[25rem] max-w-[80rem] w-full"
             />
           </div>
         </div>
