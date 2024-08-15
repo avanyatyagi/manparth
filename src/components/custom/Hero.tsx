@@ -6,15 +6,15 @@ function Hero() {
     
       <div
         id="hero"
-        className="xl:pt-16 pt-32 mx-auto flex xl:flex-row flex-col text-center xl:text-left items-center h-screen"
+        className="xl:pt-16 pt-32 mx-auto flex xl:flex-row flex-col text-center xl:text-left items-center h-screen gap-20"
       >
-        <div className="flex flex-col items-left xl:w-[60%] gap-5">
+        <div className="flex flex-col items-left xl:w-[60%] w-full gap-5">
           <div className="xl:text-[5rem] text-[2.5rem] font-semibold text-custom-dark leading-none">
             Bridging Tradition and Innovation in Education <br />
             with{" "}
             <span className="text-custom-light xl:text-[4.5rem] text-[2rem]">
               <Typewriter
-                words={["Manparth", "मनपार्थ"]}
+                words={["Manparth"]}
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -34,9 +34,10 @@ function Hero() {
             <img
               src={hero}
               alt=""
-              width={400}
-              height={400}
-              className=""
+              width={500}
+              height={500}
+            
+              className="xl:min-w-[30rem] max-w-[50rem] w-full"
             />
           </div>
         </div>
