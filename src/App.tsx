@@ -7,10 +7,10 @@ import Hero from "./components/custom/Hero";
 function App() {
   return (
     <Router>
-      <div className="h-auto bg-custom-bg font-custom-font">
+      <div className="h-auto font-custom-font px-[5rem]">
         <Header />
-        <main className="flex-grow">
-          <div className="container mx-auto px-4">
+        <main className="justify-center">
+          <div className="">
             <Hero/>
           </div>
         </main>
