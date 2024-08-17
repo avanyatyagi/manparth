@@ -6,7 +6,7 @@ function Mission() {
     <section className="py-[10rem]">
       <div className="flex flex-col items-center justify-center text-center pb-12 w-full">
         <h2 className="xl:text-[5rem]  text-[2.5rem] font-semibold text-custom-dark leading-none">
-          Our Mission to Foster Unity and Enlightenment <br />Across Bharat
+          Our Mission to Foster Unity and Enlightenment Across Bharat
         </h2>
         {/* <div className="mt-[-60rem] mx-auto mr-20  ">
           <img

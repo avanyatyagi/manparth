@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/custom/Navbar";
 import Hero from "./components/custom/Hero";
 import Mission from "./components/custom/Mission";
+import Team from "./components/custom/Team";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main className="justify-center items-center">
             <Hero/>
             <Mission/>
+            <Team/>
         </main>
         {/* <Footer /> */}
       </div>
