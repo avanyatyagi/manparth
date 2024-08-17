@@ -34,10 +34,9 @@ function Hero() {
             <img
               src={hero}
               alt=""
-              width={500}
-              height={500}
+           
             
-              className="xl:min-w-[25rem] max-w-[80rem] w-full"
+              className="xl:min-w-[25rem] xl:max-w-[80rem] min-w-[20rem] max-w-[80rem]"
             />
           </div>
         </div>

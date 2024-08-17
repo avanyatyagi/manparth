@@ -9,7 +9,7 @@ import Team from "./components/custom/Team";
 function App() {
   return (
     <Router>
-      <div className="h-auto font-custom-font xl:px-[5rem] px-[2rem] text-custom-dark">
+      <div className="h-auto font-custom-font xl:px-[5rem] px-[1.5rem] text-custom-dark">
         <Header />
         <main className="justify-center items-center">
             <Hero/>
