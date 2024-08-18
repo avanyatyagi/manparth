@@ -15,7 +15,8 @@ function Team() {
         </span>
       </div>
       <div className="flex flex-col xl:gap-10 xl:w-[60%] justify-end items-end md:block">
-        <img src={team} alt="" className="w-[40rem] xl:ml-auto" />
+        <img src={team} alt="" className="w-[40rem] xl:ml-auto" draggable="false"onContextMenu={(e) => e.preventDefault()}
+        />
         {/* <div className="flex flex-row gap-10 items-end w-full xl:ml-20">
           <img src={logo} alt="" className="w-[20rem]" />
           <img src={logo} alt="" className="w-[20rem]" />
