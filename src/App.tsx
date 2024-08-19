@@ -5,6 +5,7 @@ import Header from "./components/custom/Navbar";
 import Hero from "./components/custom/Hero";
 import Mission from "./components/custom/Mission";
 import Team from "./components/custom/Team";
+import Benefits from "./components/custom/Testimonial";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Hero/>
             <Mission/>
             <Team/>
+            <Benefits/>
         </main>
         {/* <Footer /> */}
       </div>
