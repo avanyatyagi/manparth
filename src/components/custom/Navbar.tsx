@@ -3,6 +3,7 @@ import { useState } from "react";
 import { HamburgerMenu } from "../ui/Header";
 import manparth from "../../assets/logo.png"
 import MenuSvg from '../ui/MenuSvg'
+import {navigation} from '../../constants'
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -90,10 +91,4 @@ function enablePageScroll() {
   throw new Error("Function not implemented.");
 }
 
-const navigation = [
-  { id: 1, title: "Home", url: "#hero" ,onlyMobile: true},  
-  { id: 2, title: "About", url: "#about" },
-  { id: 3, title: "Projects", url: "#projects" },
-  { id: 4, title: "Contact", url: "#contact" },
-];
 

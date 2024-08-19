@@ -1,5 +1,6 @@
 // import curve from "../../assets/curve.svg";
 import manparth from "../../assets/logo.png"
+import { mission } from "../../constants";
 
 function Mission() {
   return (
@@ -43,25 +44,3 @@ function Mission() {
 }
 
 export default Mission;
-
-const mission=[
-    {
-      "id": 1,
-      "title": "Empowering Youth",
-      "description": "Inspiring and preparing the next generation to lead with integrity and vision.",
-      "image": "path/to/empowering-youth.png"
-    },
-    {
-      "id": 2,
-      "title": "Promoting Unity",
-      "description": "Bringing diverse communities together through shared learning and mutual respect.",
-      "image": "path/to/promoting-unity.png"
-    },
-    {
-      "id": 3,
-      "title": "Mission & Vision",
-      "description": "Uniting wisdom and education to lead Bharat to global enlightenment.",
-      "image": "path/to/mission-vision.png"
-    }
-  ]
-  
