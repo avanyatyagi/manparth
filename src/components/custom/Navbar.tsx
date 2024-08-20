@@ -1,9 +1,16 @@
-import { useLocation } from "react-router-dom";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import manparth from "../../assets/logo.png";
+import { navigation } from "../../constants";
 import { HamburgerMenu } from "../ui/Header";
-import manparth from "../../assets/logo.png"
-import MenuSvg from '../ui/MenuSvg'
-import {navigation} from '../../constants'
+import MenuSvg from "../ui/MenuSvg";
+
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -32,9 +39,15 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center xl:px-[5rem] px-[2rem]">
-        <a className="w-[12rem] xl:mr-8 flex flex-row items-center gap-4 font-bold" href="#hero">
+        <a
+          className="w-[12rem] xl:mr-8 flex flex-row items-center gap-4 font-bold"
+          href="#hero"
+        >
           <img src={manparth} width={60} height={60} alt="" />
-          <span className="text-custom-dark font-code text-2xl"> Man<span className="text-custom-light">Parth</span></span>
+          <span className="text-custom-dark font-code text-2xl">
+            {" "}
+            Man<span className="text-custom-light">Parth</span>
+          </span>
         </a>
 
         <nav
@@ -70,10 +83,17 @@ const Header = () => {
         >
           New account
         </a> */}
-        <a className="hidden lg:flex p-3 px-4 text-sm bg-custom-dark rounded-full text-white" href="https://www.linkedin.com/in/srivastava4nishant/">
+        {/* <a className="hidden lg:flex p-3 px-4 text-sm bg-custom-dark rounded-full text-white" href="https://www.linkedin.com/in/srivastava4nishant/">
           Lets Connect
-        </a>
-
+        </a> */}
+        <SignedOut>
+          <div className="hidden lg:flex p-3 px-6 text-lg bg-custom-dark rounded-full text-white">
+            <SignInButton />
+          </div>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
         <button
           className="ml-auto lg:hidden"
           // px="px-3"
@@ -90,5 +110,3 @@ export default Header;
 function enablePageScroll() {
   throw new Error("Function not implemented.");
 }
-
-
