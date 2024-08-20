@@ -4,17 +4,18 @@ import { GradientLight } from "../ui/Gradient";
 import Marquee from "react-fast-marquee";
 import { FaLinkedin } from "react-icons/fa";
 import useDeviceType from "../../hooks/useDeviceType";
-import {benefits} from "../../constants";
+import { benefits } from "../../constants";
 
 const Benefits = () => {
-const isMobile = useDeviceType();
+  const isMobile = useDeviceType();
   return (
-    <section id="testimonial">
+    <section id="testimonial" className="py-20">
       <GradientLight />
-      <div className="container relative z-2">
-     
-
-        <Marquee speed={50} pauseOnHover={!isMobile} pauseOnClick={isMobile}>
+        <h2 className="text-center xl:text-[5rem] text-[3rem] font-semibold leading-none">
+        Voices of Support and <br />    Satisfaction
+        </h2>
+      <div className=" relative z-2">
+        <Marquee speed={30} pauseOnHover={!isMobile} pauseOnClick={isMobile}>
           <div className="flex xl:gap-10 gap-4 mb-10 xl:mr-10 mr-4">
             {benefits.map((item) => (
               <BenefitCard item={item} key={item.id} />
@@ -35,10 +36,8 @@ const BenefitCard = ({ item }: { item: any }) => {
   };
 
   return (
-    <div
-      className="block relative p-0.5 bg-conic-gradient rounded-[2rem] h-[11.5rem] xl:w-[20rem] w-[17rem]"
-    >
-      <div className="relative z-2 flex flex-col p-[1.25rem] h-[10.5rem] bg-n-8 rounded-[2rem] overflow-hidden pointer-events-auto">
+    <div className="block relative p-0.5 bg-custom-dark  rounded-[2rem] h-[11.5rem] xl:w-[20rem] w-[17rem]">
+      <div className="relative bg-custom-bg z-2 flex flex-col p-[1.25rem] h-[10.5rem] bg-n-8 rounded-[2rem] overflow-hidden pointer-events-auto text-custom-dark">
         <p
           className={`text-xs text-justify text-n-3 mb-5 select-none ${
             isExpanded ? "" : "line-clamp"
