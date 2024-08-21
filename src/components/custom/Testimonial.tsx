@@ -36,7 +36,7 @@ const BenefitCard = ({ item }: { item: any }) => {
   };
 
   return (
-    <div className="block relative p-0.5 bg-custom-dark  rounded-[2rem] h-[11.5rem] xl:w-[20rem] w-[17rem]">
+    <div className="block relative p-0.5 bg-custom-main-gradient  rounded-[2rem] h-[11.5rem] xl:w-[20rem] w-[17rem]">
       <div className="relative bg-custom-bg z-2 flex flex-col p-[1.25rem] h-[10.5rem] bg-n-8 rounded-[2rem] overflow-hidden pointer-events-auto text-custom-dark">
         <p
           className={`text-xs text-justify text-n-3 mb-5 select-none ${
