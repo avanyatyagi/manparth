@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(90deg, #ffffffE6, transparent 30%, transparent 70%, #ffffffE6)',
+        'custom-main-gradient': 'linear-gradient(90deg, #3C0301, #936F43)',
       },
       animation: {
         marquee: "marquee var(--duration) linear infinite",
