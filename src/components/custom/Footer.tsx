@@ -3,8 +3,8 @@ import logo from "../../assets/logo.png";
 function Footer() {
   return (
     <footer className="w-full text-black">
-      <div className="p-4 flex relative mt-10 justify-between">
-        <div className="flex flex-col w-[20%]">
+      <div className="p-4 flex relative mt-10 justify-between xl:items-end  items-center xl:items-left text-center space-y-12 flex-col xl:flex-row">
+        <div className="flex flex-col xl:w-[20%]">
           <div className="flex items-center font-bold gap-4 mb-2">
             <img src={logo} width={60} height={60} className="h-auto" alt="" />
             <span className="text-custom-dark font-code text-[2.5rem]">
@@ -21,9 +21,9 @@ function Footer() {
           </div>
         </div>
 
-        <div className="hidden md:flex space-x-20 text-[1.8rem]">
+        
           <div>
-            <h3 className=" font-bold mb-4 ">Information</h3>
+            <h3 className=" font-bold mb-4 text-[1.8rem] ">Information</h3>
             <nav className="space-y-2 text-[1.3rem]">
               <a
                 href="#"
@@ -53,7 +53,7 @@ function Footer() {
           </div>
 
           <div>
-            <h3 className=" font-bold mb-4 text-pe">Services</h3>
+            <h3 className=" font-bold mb-4 text-[1.8rem] text-pe">Services</h3>
             <nav className="space-y-2  text-[1.3rem]">
               <a
                 href="#"
@@ -83,7 +83,7 @@ function Footer() {
           </div>
 
           <div>
-            <h3 className="  font-bold mb-4">Company</h3>
+            <h3 className="  font-bold mb-4 text-[1.8rem]">Company</h3>
             <nav className="space-y-2  text-[1.3rem]">
               <a
                 href="#"
@@ -103,11 +103,16 @@ function Footer() {
               >
                 Privacy Policy
               </a>
+              <a
+                href="#"
+                className="hover:text-pe transition duration-300 block"
+              >
+                Privacy Policy
+              </a>
             </nav>
           </div>
-        </div>
 
-        <div className="flex items-center space-x-6">
+        {/* <div className="flex items-center space-x-6">
           <a
             href="#"
             target="_blank"
@@ -118,14 +123,14 @@ function Footer() {
           <a href="#" target="_blank" className="text-pe hover:text-pe">
             <img src="" height={40} alt="" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div
-  className="text-center text-[20rem] font-medium pb-2 opacity-30 bg-custom-main-gradient bg-clip-text text-transparent"
->
-  manparth
-</div>
+        className="text-center xl:text-[17rem] text-[5rem] font-semibold pb-2 opacity-30 bg-custom-main-gradient bg-clip-text text-transparent"
+      >
+        manparth
+      </div>
 
 
     </footer>
