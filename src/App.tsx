@@ -1,29 +1,27 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import "./App.css";
 import Footer from "./components/custom/Footer";
-import Hero from "./components/custom/Hero";
-import Mission from "./components/custom/Mission";
 import Header from "./components/custom/Navbar";
-import Team from "./components/custom/Team";
-import Benefits from "./components/custom/Testimonial";
+import MissionNVision from "./pages/MissionNVision";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <Router>
-      <div className="h-auto font-custom-font xl:px-[5rem] px-[1.5rem] text-custom-dark bg-custom-bg">
+    <div className="h-auto font-custom-font xl:px-[5rem] px-[1.5rem] text-custom-dark bg-custom-bg">
+      <Router>
         <Header />
-
-        <main className="justify-center items-center">
-          <Hero />
-          <Mission />
-          <Team />
-          <Benefits />
-        </main>
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/mission" Component={MissionNVision} />
+        </Routes>
+        
+       
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
+
 
 export default App;
