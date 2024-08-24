@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
-// import Footer from "./components/custom/Footer";
+import Footer from "./components/custom/Footer";
 import Hero from "./components/custom/Hero";
 import Mission from "./components/custom/Mission";
 import Header from "./components/custom/Navbar";
@@ -20,7 +20,7 @@ function App() {
           <Team />
           <Benefits />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
