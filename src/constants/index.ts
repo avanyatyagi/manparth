@@ -72,7 +72,7 @@ export const benefits = [
 
 export  const navigation = [
   { id: 1, title: "Home", url: "#hero" ,onlyMobile: true},  
-  { id: 2, title: "About", url: "#about" },
+  { id: 2, title: "About", url: "/about" },
   { id: 3, title: "Projects", url: "#projects" },
   { id: 4, title: "Contact", url: "#contact" },
 ];

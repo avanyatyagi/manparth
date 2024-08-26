@@ -1,6 +1,7 @@
 {
     "routes": [
       { "src": "/mission", "dest": "/" },
+      { "src": "/about", "dest": "/" },
       { "src": "/", "dest": "/" }
     ]
     }
