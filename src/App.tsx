@@ -5,6 +5,7 @@ import Footer from "./components/custom/Footer";
 import Header from "./components/custom/Navbar";
 import MissionNVision from "./pages/MissionNVision";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/mission" Component={MissionNVision} />
+          <Route path="/about" Component={About} />
         </Routes>
         <Footer />
       </Router>
