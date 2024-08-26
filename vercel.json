@@ -1,0 +1,6 @@
+{
+    "routes": [
+      { "src": "/mission", "dest": "/" },
+      { "src": "/", "dest": "/" }
+    ]
+    }
