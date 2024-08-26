@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+
 export const benefits = [
   {
     id: "0",
@@ -97,4 +99,23 @@ export const mission=[
     "image": "path/to/mission-vision.png"
   }
 ]
+
+
+export const joinUs = [
+  {
+    id: 1,
+    logo: logo,
+    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 2,
+    logo: logo, // Replace with actual path
+    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+  {
+    id: 3,
+    logo: logo, // Replace with actual path
+    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
+  },
+];
 

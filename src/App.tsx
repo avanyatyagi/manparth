@@ -15,13 +15,10 @@ function App() {
           <Route path="/" Component={Home} />
           <Route path="/mission" Component={MissionNVision} />
         </Routes>
-        
-       
         <Footer />
       </Router>
     </div>
   );
 }
-
 
 export default App;
